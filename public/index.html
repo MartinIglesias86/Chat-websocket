@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Mi chat</title>
+</head>
+<body>
+  <div class="chat_window">
+    <h1 class="title">El mas mejor chat de todos</h1>
+    <div class="bottom_wrapper clearfix">
+        <div class="messages" id="messages"></div>
+        <form onsubmit="return addMessage(this)" class="form">          
+            <div class="message-bar">
+              <input class="message_input" id="username" type="text" placeholder="Type your name here..." />
+              <input class="message_input" id="texto" placeholder="Type your message here..." />        
+              <input class="text" type="submit" value="Enviar"> 
+            </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
