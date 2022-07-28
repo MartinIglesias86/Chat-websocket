@@ -23,6 +23,8 @@ function addMessage(e) {
       author: document.getElementById('username').value,
       text: document.getElementById('texto').value
   };
+  document.getElementById('username').value = '';
+  document.getElementById('texto').value = '';
   socket.emit('new-message', mensaje);
   return false;
 }
